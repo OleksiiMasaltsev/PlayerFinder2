@@ -22,18 +22,14 @@ class PlayerBinaryFinderTest {
     }
 
     @Test
-    void printAll() {
-    }
-
-    @Test
     void findOpponentTo() {
 
         Random random = new Random();
         long creationStart = System.currentTimeMillis();
 
-        for (int i = 0; i < 1_000; i++) {
-            binaryFinder.addOpponent(new Player("", random.nextDouble() * 100.0d));
-        }
+//        for (int i = 0; i < 1_000; i++) {
+//            binaryFinder.addOpponent(new Player("", random.nextDouble() * 100.0d));
+//        }
 
         long searchStart = System.currentTimeMillis();
         System.out.println("Opponent found: " + binaryFinder.findOpponentTo(new Player("", 76.252d)));
